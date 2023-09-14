@@ -3,4 +3,48 @@
 /* Psuedo Class
 
 Adalah sebuah kelas yang memiliki sintaks :
+contoh : 
 */
+
+li:first-child {
+  font-weight: bold;
+}
+
+/* Merubah semua elemen text pada li yang pertama menjadi tebal */
+
+li:last-child {
+  font-style: italic;
+}
+
+/* merubah semua element text pada li yang terakhir menjadi italic */
+
+/* li:nth-child(2) {
+  color: red;
+} */
+
+/* merubah element kedua pada seluruh tag li menjadi warna merah () bisa diisi sesuai keiinginan kita*/
+
+li:nth-child(odd) {
+  color: red;
+}
+
+/* merubah element ganjil(odd)/genap(even) pada seluruh tag li menjadi warna merah () bisa diisi sesuai keiinginan kita*/
+
+/* Contoh Implementasi
+
+1) Saya ingin mengubah tag paragraf paling awal di halaman index menjadi warna merah
+
+2) Saya ingin mengubah font-weight paragraf terakhir yang ada di dalam tag article menjadi bold
+*/
+
+header p:nth-child(3) {
+  color: red;
+}
+
+/* p berada di dalam header dan urutan nya ketiga dari tag header  */
+
+article p:last-child {
+  font-weight: bold;
+}
+
+/* p berada di dalam tag article dan urutannya berada di akhir tag article */
