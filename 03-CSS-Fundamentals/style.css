@@ -48,3 +48,29 @@ article p:last-child {
 }
 
 /* p berada di dalam tag article dan urutannya berada di akhir tag article */
+
+/* HYPERLINKS */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+/* berarti seluruh tag a dengan atribut href akan diubah */
+
+a:visited {
+  color: #1098ad;
+  text-decoration: none;
+}
+/* ketika tag a sudah di sentuh */
+
+a:hover {
+  color: orangered;
+  text-decoration: underline orangered;
+}
+
+a:active {
+  color: black;
+}
+
+/* ketika tag a di klik */
