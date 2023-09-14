@@ -74,3 +74,27 @@ a:active {
 }
 
 /* ketika tag a di klik */
+
+/* STYLE CONFLICT */
+
+#copyright {
+  color: red;
+}
+
+.copyright {
+  color: blue;
+}
+
+.text {
+  color: green;
+}
+
+footer p {
+  color: yellow;
+}
+
+/* id memiliki prioritas tertinggi, kemudian disusul dengan class, dan yang terakhir ada element */
+
+/* 
+kasus class diatas memiliki 2 class yaitu class copyright dan class text. ketika tidak ada id maka class yang terakhir yang akan di aplikasikan yaitu class text 
+*/
