@@ -172,3 +172,36 @@ body {
 }
 
 /* jadi class like button posisi nya meliputi seluruh tag body */
+
+/* PSUEDO ELEMENTS */
+
+/* A)perbedaan psuedo element dan psuedo class
+      - psuedo element :: psuedo class :
+      
+      - psuedo element digunakan untuk  menambahkan konten tambahan ke dalam elemen atau mengubah tampilan bagian tertentu dari elemen. 
+      
+      sedangkan psuedo class digunakan untuk memberikan gaya kepada elemen ketika berada pada kondisi tertentu
+*/
+
+/* CONTOH PENERAPAN */
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+/* first letter dari h1 merupakan emoji buku, maka emoji tersebut akan dirubah gayanya menjadi normal dan memberikan margin 5px ke sebelah kanan */
+
+h2 {
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  display: inline-block;
+  background-color: yellow;
+  font-size: 16px;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+}
