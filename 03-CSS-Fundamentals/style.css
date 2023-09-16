@@ -139,3 +139,36 @@ ol li {
   /* merubah elemen block ke inline-block */
   display: inline-block;
 }
+
+/* RELATIVE VS ABSOLUTE POSITIONINGS */
+
+/* RELATIVE POSITIONING :
+a) posisi default
+b) elemen ditata sesuai dengan kode sumber dalam html
+
+c) posititon : relative;
+*/
+
+/* ABSOLUTE POSITIONING : 
+a) element akan 'dikeluarkan' dari posisi default dan ditata sesuai dengan keiigninan kita
+
+b) tidak akan berefekpada element sekitar, namun bisa jadi tumpang tindih
+
+c) menggunakan top,bottom,left,right untuk memposisikan elemen dari container yang posisinya relative
+*/
+
+/* contoh Penerapan */
+body {
+  position: relative;
+}
+
+.like-button {
+  font-size: 22px;
+  padding: 20px;
+
+  position: absolute;
+  bottom: 0px;
+  right: 60px;
+}
+
+/* jadi class like button posisi nya meliputi seluruh tag body */
