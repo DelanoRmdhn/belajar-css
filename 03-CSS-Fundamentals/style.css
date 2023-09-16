@@ -98,3 +98,44 @@ footer p {
 /* 
 kasus class diatas memiliki 2 class yaitu class copyright dan class text. ketika tidak ada id maka class yang terakhir yang akan di aplikasikan yaitu class text 
 */
+
+/* perbedaan inline dan block element */
+
+/* 
+Inline ELement :
+a) berlaku pada img,a,em,strong
+b) margin dan padding hanya berefek ke  horizontal
+c) inline element bisa diubah ke block element dengan cara : 
+display :block
+
+
+Block Element :
+a) berlaku pada hampir semua element html
+b) memenuhi element parent
+
+Inline-block element :
+a) ukuran nya sebatas pada ukuran konten
+b) box model diterapkan mirip dengan block
+
+*/
+
+/* Contoh Penerapan elemen Inline */
+
+nav a:link {
+  background-color: orange;
+  margin: 20px;
+  padding: 20px;
+
+  /* merubah elemen inline ke block */
+  display: block;
+}
+
+/* Contoh Penerapan elemen inline-block */
+
+ol li {
+  background-color: aqua;
+  margin-bottom: 10px;
+
+  /* merubah elemen block ke inline-block */
+  display: inline-block;
+}
