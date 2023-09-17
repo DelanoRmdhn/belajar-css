@@ -272,15 +272,11 @@ nav p {
 
 .flexbox-set {
   display: flex;
-  gap: 70px;
-}
-
-article {
-  flex: 5;
+  gap: 75px;
 }
 
 aside {
-  flex: 2 1;
+  flex: 0 0 300px;
   align-self: flex-start;
 }
 
