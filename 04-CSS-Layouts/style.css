@@ -51,7 +51,7 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
-  width: 500px;
+  /* width: 500px; */
 }
 
 /* SMALLER ELEMENTS */
@@ -82,6 +82,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 p {
@@ -92,7 +93,7 @@ p {
 
 ul,
 ol {
-  margin-left: 50px;
+  /* margin-left: 50px; */
   margin-bottom: 20px;
 }
 
@@ -140,10 +141,6 @@ li:last-child {
   font-weight: bold;
 } */
 
-li:first-child {
-  font-weight: bold;
-}
-
 li:last-child {
   font-style: italic;
 }
@@ -189,7 +186,6 @@ nav a:link {
   display: block; */
 
   margin-right: 30px;
-  margin-top: 10px;
   display: inline-block;
 }
 
@@ -254,44 +250,56 @@ nav p {
   font-size: 18px;
 } */
 
-/* FLOAT */
+/* FLEXBOX */
 
-/* TATA LETAK */
-article {
-  float: left;
-  width: 825px;
+/* LAYOUT */
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-aside {
-  float: right;
-  width: 300px;
-}
-
-footer {
-  clear: both;
-}
-
-h1 {
-  float: left;
-}
-
-nav {
-  float: right;
-}
-
-.clearfix::after {
-  clear: both;
-  content: "";
-  display: block;
-}
-
-.author-img {
-  float: left;
-  margin-bottom: 20px;
-  margin-right: 25px;
+.author-box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
 .author {
-  float: left;
-  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.flexbox-set {
+  display: flex;
+  gap: 70px;
+}
+
+article {
+  flex: 5;
+}
+
+aside {
+  flex: 2 1;
+  align-self: flex-start;
+}
+
+/* RELATED POST */
+.related-post {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 10px;
+}
+
+.related-links:link {
+  font-size: 17px;
+  font-style: normal;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.related-author {
+  margin-bottom: 0;
+  font-size: 18px;
 }
