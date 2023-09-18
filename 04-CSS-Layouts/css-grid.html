@@ -68,6 +68,17 @@
 
         /* CSS GRID */
       }
+
+      /* GRID ITEMS */
+      .el--8 {
+        grid-column: 2 / 3; /* memindahkan posisi kolom element 8 dari 3 / 4 ke 2 / 3 */
+        grid-row: 1 / 2; /* memindahkan posisi baris element 8 dari 2 / 3 ke 1 / 2 */
+      }
+
+      .el--2 {
+        grid-column: 1 / 2; /* memindahkan posisi kolom element 2 dari 2 / 3 ke 1 / 2 */
+        grid-row: 2 / 3; /* memindahkan posisi baris element 8 dari 1 / 2 ke 2 / 3 */
+      }
     </style>
   </head>
   <body>
@@ -78,7 +89,7 @@
       <div class="el el--4">(4) are</div>
       <div class="el el--5">(5) amazing</div>
       <div class="el el--6">(6) languages</div>
-      <div class="el el--7">(7) to</div>
+      <!-- <div class="el el--7">(7) to</div> -->
       <div class="el el--8">(8) learn</div>
     </div>
 
