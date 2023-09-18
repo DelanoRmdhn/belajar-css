@@ -271,6 +271,11 @@ aside {
   align-self: start;
 }
 
+.related-list {
+  display: flex;
+  gap: 10px;
+}
+
 footer {
   grid-column: 1 / -1;
   justify-self: center;
