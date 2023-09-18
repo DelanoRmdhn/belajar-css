@@ -26,7 +26,6 @@ body {
   padding-left: 40px;
   padding-right: 40px; */
   padding: 20px 40px;
-  margin-bottom: 60px;
   /* height: 80px; */
 }
 
@@ -51,7 +50,6 @@ aside {
   /* padding-top: 50px;
   padding-bottom: 50px; */
   padding: 50px 0;
-  width: 500px;
 }
 
 /* SMALLER ELEMENTS */
@@ -82,6 +80,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -92,7 +91,6 @@ p {
 
 ul,
 ol {
-  margin-left: 50px;
   margin-bottom: 20px;
 }
 
@@ -117,6 +115,7 @@ li:last-child {
 #author {
   font-style: italic;
   font-size: 18px;
+  margin-bottom: 0;
 }
 
 #copyright {
@@ -134,18 +133,6 @@ li:last-child {
 
 .related {
   list-style: none;
-}
-
-/* .first-li {
-  font-weight: bold;
-} */
-
-li:first-child {
-  font-weight: bold;
-}
-
-li:last-child {
-  font-style: italic;
 }
 
 /* Misconception: this won't work! */
@@ -254,44 +241,37 @@ nav p {
   font-size: 18px;
 } */
 
-/* FLOAT */
+/* GRID */
 
 /* TATA LETAK */
-article {
-  float: left;
-  width: 825px;
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 60px 75px;
+}
+
+.main-header {
+  grid-column: 1 / -1;
+}
+
+.author-section {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
 }
 
 aside {
-  float: right;
-  width: 300px;
+  align-self: start;
 }
 
 footer {
-  clear: both;
-}
-
-h1 {
-  float: left;
-}
-
-nav {
-  float: right;
-}
-
-.clearfix::after {
-  clear: both;
-  content: "";
-  display: block;
-}
-
-.author-img {
-  float: left;
-  margin-bottom: 20px;
-  margin-right: 25px;
-}
-
-.author {
-  float: left;
-  margin-top: 10px;
+  grid-column: 1 / -1;
+  justify-self: center;
 }
