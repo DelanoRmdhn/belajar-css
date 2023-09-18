@@ -40,6 +40,18 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        /* grid-template-columns: 2fr 2fr 1fr 1fr; */
+        grid-template-columns: repeat(2, 2fr) repeat(2, 1fr);
+
+        /* grid-template-rows: 300px 150px; */
+        grid-template-rows: repeat(2, 1fr);
+        /* 
+        Karena elemen ketiga memiliki sebuah ukuran tinggi 150px maka 1fr disini disama ratakan semua 150px.
+      sedangkan ketika ukuran tinggi 150px dimatikan, maka ukuran 1fr akan sebesar isi kontennya
+        */
+
+        gap: 60px 30px;
       }
 
       .container--2 {
@@ -51,6 +63,8 @@
 
         width: 1000px;
         height: 600px;
+
+        display: none; /* untuk menonaktifkan tampilan pada browser */
 
         /* CSS GRID */
       }
