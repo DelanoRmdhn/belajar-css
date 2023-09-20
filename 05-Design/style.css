@@ -122,8 +122,11 @@ img {
 }
 
 /* FEATURES */
-/* .features-icon {
-} */
+.features-icon {
+  width: 32px;
+  stroke: #563f1b;
+  margin-bottom: 16px;
+}
 
 .features-title {
   color: #563f1b;
@@ -183,8 +186,10 @@ h3 {
   margin-bottom: 0;
 }
 
-/* .chair-icon {
-} */
+.chair-icon {
+  width: 24px;
+  stroke: #563f1b;
+}
 
 .chair-price {
   display: flex;
