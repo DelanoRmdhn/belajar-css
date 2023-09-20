@@ -82,6 +82,7 @@ h1 {
   font-size: 44px;
   line-height: 1.1;
   letter-spacing: -1px;
+  text-shadow: 1px 20px 20px rgba(0, 0, 0, 0.285);
 
   /* semakin besar ukurant text kecilkan line height dan letter spacingnya
   */
@@ -160,6 +161,10 @@ img {
 }
 
 /* CHAIRS */
+.chair {
+  box-shadow: 5px 15px 30px 0 rgba(0, 0, 0, 0.085);
+}
+
 .chair-box {
   padding: 24px;
 }
