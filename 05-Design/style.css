@@ -33,11 +33,11 @@ body {
 
 header,
 section {
-  margin-bottom: 48px;
+  margin-bottom: 96px;
 }
 
 h2 {
-  margin-bottom: 48px;
+  margin-bottom: 32px;
   font-size: 36px;
   letter-spacing: -0.5px;
   line-height: 1.1;
@@ -55,6 +55,10 @@ h2 {
   letter-spacing: -0.25px;
 }
 
+.testimonial-author {
+  font-weight: 600;
+}
+
 .grid-3-cols {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -70,7 +74,7 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 80px;
-  margin-top: 48px;
+  margin-top: 72px;
 }
 
 .header-text-box {
@@ -107,6 +111,7 @@ img {
 .btn:link,
 .btn:visited {
   font-size: 14px;
+  font-weight: 600;
   display: inline-block;
   text-decoration: none;
   text-transform: uppercase;
@@ -137,7 +142,7 @@ img {
 
 .features-title {
   color: #563f1b;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   font-size: 20px;
 }
 
