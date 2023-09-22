@@ -42,12 +42,13 @@ TEXT COLOR : #343A40
         background-color: #563f1b;
         color: #ffffff;
         border-radius: 8px;
-        padding: 32px;
-        padding-left: 86px;
+        padding: 32px 48px 32px 86px;
 
         display: flex;
         align-items: center;
         gap: 86px;
+
+        position: relative;
       }
 
       img {
@@ -72,6 +73,74 @@ TEXT COLOR : #343A40
       .author-job {
         font-size: 12px;
       }
+
+      /* KONTROL */
+      .btn {
+        border: none;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+
+        background-color: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+        /* MEMPOSISIKAN AGAR BUTTON SIMETRIS */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        top: 50%;
+
+        /* MEMPOSISIKAN KELUAR DARI KANVAS */
+        position: absolute;
+      }
+
+      .icon--left {
+        left: 0;
+
+        /* MEMBUAT BUTTON BERADA DI TENGAH */
+        transform: translate(
+          -50%,
+          -50%
+        ); /* -50 adalah x dan -50 kedua adalah y. yang berarti elemen btn akan naik 50% dari tinggi si elemen btn dan elemen btn akan bergeser ke kiri sebanyak 50% lebar dari elemen*/
+      }
+
+      .icon--right {
+        right: 0;
+        transform: translate(50%, -50%);
+      }
+
+      .icon {
+        width: 24px;
+        height: 24px;
+        stroke: #563f1b;
+      }
+
+      /* DOTS */
+      .dots {
+        cursor: pointer;
+
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 32px);
+
+        display: flex;
+        gap: 12px;
+      }
+
+      .dot {
+        width: 12px;
+        height: 12px;
+        background-color: #ffffff;
+        border: 2px solid #563f1b;
+        border-radius: 50%;
+      }
+
+      .active {
+        background-color: #563f1b;
+      }
     </style>
   </head>
   <body>
@@ -89,7 +158,7 @@ TEXT COLOR : #343A40
         <p class="author-job">Senior Product Manager at EDP Comercial</p>
       </blockquote>
 
-      <button class="btn">
+      <button class="btn icon--left">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -105,7 +174,7 @@ TEXT COLOR : #343A40
           />
         </svg>
       </button>
-      <button class="btn">
+      <button class="btn icon--right">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -121,6 +190,13 @@ TEXT COLOR : #343A40
           />
         </svg>
       </button>
+
+      <div class="dots">
+        <button class="dot active"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+        <button class="dot"></button>
+      </div>
     </div>
   </body>
 </html>
