@@ -4,6 +4,123 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Membuat Sebuah Komponen Carousel</title>
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /*
+SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+MAIN COLOR : #563F1B
+TEXT COLOR : #343A40
+*/
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        color: #343a40;
+      }
+
+      .carousel {
+        width: 900px;
+        margin: 100px auto;
+        background-color: #563f1b;
+        color: #ffffff;
+        border-radius: 8px;
+        padding: 32px;
+        padding-left: 86px;
+
+        display: flex;
+        align-items: center;
+        gap: 86px;
+      }
+
+      img {
+        height: 200px;
+        border-radius: 8px;
+        box-shadow: 0 7px 17px 3px rgba(0, 0, 0, 0.25);
+
+        transform: scale(1.5);
+      }
+
+      .testimonial-text {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 1.5;
+        margin-bottom: 32px;
+      }
+
+      .testimonial-author {
+        font-size: 14px;
+      }
+
+      .author-job {
+        font-size: 12px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <div class="carousel">
+      <img src="maria.jpg" alt="Maria" />
+      <blockquote class="testimonial">
+        <p class="testimonial-text">
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit nemo
+          perspiciatis laboriosam vel facere praesentium eos! Adipisci
+          accusantium ipsam consequatur, ratione a nulla odit temporibus eius
+          omnis, doloremque pariatur cum."
+        </p>
+
+        <p class="testimonial-author">Maria de Jesus Hasibala</p>
+        <p class="author-job">Senior Product Manager at EDP Comercial</p>
+      </blockquote>
+
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 19.5L8.25 12l7.5-7.5"
+          />
+        </svg>
+      </button>
+      <button class="btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M8.25 4.5l7.5 7.5-7.5 7.5"
+          />
+        </svg>
+      </button>
+    </div>
+  </body>
 </html>
