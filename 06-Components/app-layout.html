@@ -14,14 +14,107 @@
 
       body {
         font-family: sans-serif;
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        height: 100vh;
+
+        /* LAYOUT */
+        display: grid;
+        grid-template-columns: 80px 400px 1fr 250px;
+        grid-template-rows: 80px 1fr;
+      }
+
+      nav {
+        background-color: #343a40;
+        grid-row: 1 / -1;
+        color: #fff;
+      }
+      menu {
+        background-color: #7048e8;
+        grid-column: 2 / -1;
+        color: #fff;
+      }
+      section {
+        background-color: #e9ecef;
+        padding: 40px;
+      }
+      main {
+        background-color: #fff;
+      }
+      aside {
+        background-color: #e9ecef;
+      }
+
+      /* MENU */
+      menu {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 40px;
+      }
+
+      .menu-item:link:last-child {
+        background-color: #343a40;
+        margin-left: auto;
+      }
+
+      .menu-item:link,
+      .menu-item:visited {
+        font-size: 16px;
+        font-weight: 500;
+        text-decoration: none;
+        color: #fff;
+
+        display: inline-block;
+        background-color: #835fed;
+        padding: 8px 16px;
+      }
+
+      /* EMAIL */
+
+      section {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+
+        overflow: scroll;
+      }
+      .email {
+        background-color: #d5d5d5;
+        height: 96px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        /* flex-shrink 0 maka elemen tidak akan menyusut */
+        flex-shrink: 0;
       }
     </style>
   </head>
   <body>
-    <nav>nav</nav>
-    <menu>menu</menu>
-    <section>inbox</section>
-    <main>main</main>
-    <aside>additional info</aside>
+    <nav>Nav</nav>
+    <menu>
+      <a href="#" class="menu-item">New</a>
+      <a href="#" class="menu-item">Reply</a>
+      <a href="#" class="menu-item">Forward</a>
+      <a href="#" class="menu-item">Mark unread</a>
+      <a href="#" class="menu-item">Trash</a>
+    </menu>
+    <section>
+      <div class="email">Email 1</div>
+      <div class="email">Email 2</div>
+      <div class="email">Email 3</div>
+      <div class="email">Email 4</div>
+      <div class="email">Email 5</div>
+      <div class="email">Email 6</div>
+      <div class="email">Email 7</div>
+      <div class="email">Email 8</div>
+      <div class="email">Email 9</div>
+      <div class="email">Email 10</div>
+    </section>
+    <main>Main</main>
+    <aside>Additional info</aside>
   </body>
 </html>
