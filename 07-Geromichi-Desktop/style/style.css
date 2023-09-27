@@ -59,28 +59,16 @@ nav {
   margin: 0 auto;
 }
 
-.container2 {
-  width: 130rem;
-  margin: 0 auto;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
 .hero-section {
   position: absolute;
   top: 50%;
-  left: 50%;
+  right: 10%;
 
-  transform: translate(-50%, -50%);
-}
-
-.header-container-inner {
-  grid-column: 2/3;
+  transform: translate(10%, -50%);
 }
 
 .hero-box {
-  /* max-width: 60rem; */
+  max-width: 60rem;
   background-color: #d0c29f;
   padding: 3rem 2rem;
   border-radius: 1.2rem;
