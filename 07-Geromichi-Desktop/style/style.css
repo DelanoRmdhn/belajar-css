@@ -28,7 +28,86 @@ shades :
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  font-family: sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
+  line-height: 1;
+  color: #2f4858;
+}
+
+header {
+  height: 120vh;
+  background-image: linear-gradient(rgb(34, 34, 34, 0.6), rgb(34, 34, 34, 0.6)),
+    url(/07-Geromichi-Desktop/img/backup.png);
+  background-size: cover;
+
+  position: relative;
+  color: #fff;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto;
+}
+
+.container2 {
+  width: 130rem;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero-section {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+}
+
+.header-container-inner {
+  grid-column: 2/3;
+}
+
+.hero-box {
+  /* max-width: 60rem; */
+  background-color: #d0c29f;
+  padding: 3rem 2rem;
+  border-radius: 1.2rem;
+
+  box-shadow: 0 3px 5px rgba(208, 194, 159, 0.297);
+}
+
+.hero-title {
+  font-size: 4.2rem;
+  line-height: 1.15;
+  letter-spacing: -0.8px;
+  margin-bottom: 4.8rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 3.2rem;
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: #fff;
+  padding: 2rem 4rem;
+  background-color: #005b46;
 }
