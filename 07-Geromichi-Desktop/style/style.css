@@ -36,7 +36,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1;
-  color: #2f4858;
+  color: #fff;
 }
 
 header {
@@ -69,11 +69,9 @@ nav {
 
 .hero-box {
   max-width: 60rem;
-  background-color: #d0c29f;
+  background-color: #d62828;
   padding: 3rem 2rem;
   border-radius: 1.2rem;
-
-  box-shadow: 0 3px 5px rgba(208, 194, 159, 0.297);
 }
 
 .hero-title {
@@ -89,6 +87,12 @@ nav {
   margin-bottom: 3.2rem;
 }
 
+.hero-btn {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -97,5 +101,11 @@ nav {
   text-decoration: none;
   color: #fff;
   padding: 2rem 4rem;
-  background-color: #005b46;
+  border: 3px solid #f77f00;
+  border-radius: 4rem;
+}
+
+.filled {
+  background-color: #f77f00;
+  border: none;
 }
