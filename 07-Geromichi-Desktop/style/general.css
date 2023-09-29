@@ -26,7 +26,7 @@ btn : 3rem 4rem
 
 
 --06 SPACING-SYSTEM (px)
-2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 / 140
 
 */
 
@@ -66,9 +66,19 @@ header {
   margin: 0 auto;
 }
 
+.container2 {
+  max-width: 120rem;
+  margin: 0 auto;
+
+  padding: 9.6rem 3.2rem;
+}
+
 .grid {
   display: grid;
-  gap: 6.4rem;
+  column-gap: 6.4rem;
+  row-gap: 12.8rem;
+
+  align-items: center;
 }
 
 .grid--center-v {
@@ -80,7 +90,7 @@ header {
 }
 
 .grid--cols-3 {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .section-tertiary {

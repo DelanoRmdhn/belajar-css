@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 4.8rem;
+  height: 9.6rem;
   padding: 0 3.2rem;
 }
 
@@ -87,8 +87,7 @@
 /**********************/
 
 .about-us-section {
-  width: 120rem;
-  margin: 12.8rem auto;
+  padding: 9.6rem 0;
 }
 
 .about-us-heading {
@@ -103,12 +102,12 @@
 
 .about-us-img {
   width: 80%;
-  border-radius: 19px;
+  border-radius: 1.9rem;
 }
 
 .about-us-description {
-  font-size: 2rem;
-  line-height: 1.6;
+  font-size: 1.8rem;
+  line-height: 1.8;
   margin-bottom: 3.2rem;
 }
 
@@ -120,4 +119,147 @@
 .social-media-img {
   width: 3.2rem;
   display: block;
+}
+
+/**********************/
+/*FEATURED IN*/
+/**********************/
+.featured-heading {
+  font-size: 1.6rem;
+  color: #c2c2c2;
+  text-transform: uppercase;
+  text-align: center;
+
+  letter-spacing: 0.75px;
+  margin-bottom: 4.4rem;
+}
+
+.logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logos img {
+  height: 5rem;
+  filter: grayscale(100%);
+  opacity: 80%;
+}
+
+/**********************/
+/*SERVICES SECTION*/
+/**********************/
+.services-section {
+  padding: 4.4rem 0 9.6rem 0;
+}
+
+.service-icon {
+  font-size: 3.2rem;
+  color: #f77f00;
+  margin-bottom: 3.2rem;
+
+  padding: 1.6rem;
+  background-color: #fccc99;
+  border-radius: 50%;
+}
+
+.service-box h1 {
+  font-size: 2.4rem;
+}
+
+.service-description {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+/**********************/
+/*PREVIOUS EVENT*/
+/**********************/
+.background-color {
+  background-color: #fef2e6;
+}
+
+.event-heading {
+  text-align: center;
+  margin-bottom: 9.6rem;
+}
+
+.events-image {
+  display: flex;
+  align-self: center;
+  justify-self: center;
+}
+
+.events-image img {
+  width: 100%;
+  border-radius: 1.9rem;
+}
+
+.events-number {
+  font-size: 4.4rem;
+  margin-bottom: 1.6rem;
+  color: #f77f00;
+}
+
+.events-title {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  color: #d62828;
+}
+
+.events-description {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+/**********************/
+/*UPCOMING EVENT SECTION*/
+/**********************/
+.upcoming-event-heading {
+  margin-bottom: 9.6rem;
+}
+
+.events-card {
+  box-shadow: 0 1.6rem 1.2rem rgba(0, 0, 0, 0.08);
+
+  border-radius: 0 0 1.9rem 1.9rem;
+}
+
+.events-card img {
+  width: 100%;
+  border-radius: 1.9rem 1.9rem 0 0;
+}
+
+.events-text-card {
+  padding: 2.4rem 3.2rem;
+}
+
+.events-text-card ul {
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  margin-bottom: 3.2rem;
+}
+
+.events-text-card ul li {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  text-align: start;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.events-icon {
+  font-size: 3.2rem;
+}
+
+.events-button {
+  display: flex;
+  justify-content: center;
 }
