@@ -64,6 +64,7 @@ header {
 .container {
   max-width: 130rem;
   margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 .container2 {
@@ -77,8 +78,6 @@ header {
   display: grid;
   column-gap: 6.4rem;
   row-gap: 12.8rem;
-
-  align-items: center;
 }
 
 .grid--center-v {
@@ -91,6 +90,10 @@ header {
 
 .grid--cols-3 {
   grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--cols-4 {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .section-tertiary {
