@@ -7,6 +7,7 @@
     <!-- LINK CSS -->
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/general.css" />
+    <link rel="stylesheet" href="style/mediaqueries.css" />
 
     <!-- LINK FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,8 +45,10 @@
               bowling.
             </p>
             <div class="hero-btn">
-              <a href="#" class="btn filled">Mendaftar lomba!</a>
-              <a href="#" class="btn">Pelajari selengkapnya &darr;</a>
+              <a href="#" class="btn btn--filled">Mendaftar lomba!</a>
+              <a href="#" class="btn btn--transparent"
+                >Pelajari selengkapnya &darr;</a
+              >
             </div>
           </div>
         </div>
@@ -53,7 +56,7 @@
     </header>
 
     <section class="featured-in-section">
-      <div class="container2">
+      <div class="featured-in container2">
         <h2 class="featured-heading">Bekerja sama dengan</h2>
         <div class="logos">
           <img src="img/Sponsor/BusinessInsider-logo.png" />
@@ -71,8 +74,8 @@
           <img src="img/about-us.png" class="about-us-img" />
         </div>
         <div class="about-us-heading grid--center-v">
-          <p class="section-tertiary">Tentang kami :</p>
-          <h1 class="section-title">
+          <p class="about-us-tertiary">Tentang kami :</p>
+          <h1 class="about-us-title">
             Merayakan Keindahan Bowling Sejak tahun 2015
           </h1>
           <p class="about-us-description">
@@ -111,7 +114,7 @@
       <div class="services grid grid--cols-3 grid--align-x">
         <div class="service-box">
           <ion-icon name="heart" class="service-icon"></ion-icon>
-          <h1 class="section-title">Komitmen kami</h1>
+          <h1 class="service-title">Komitmen kami</h1>
           <p class="service-description">
             Sejak awal, kami berkomitmen untuk memberikan pengalaman bermain
             bowling terbaik kepada setiap pelanggan kami.Kami percaya bahwa
@@ -120,7 +123,7 @@
         </div>
         <div class="service-box">
           <ion-icon name="people" class="service-icon"></ion-icon>
-          <h1 class="section-title">Komunitas Yang Kuat</h1>
+          <h1 class="service-title">Komunitas Yang Kuat</h1>
           <p class="service-description">
             Telah menyaksikan pertumbuhan komunitas bowling yang kuat di sekitar
             kami. Dari pemula yang belajar melempar bola pertama mereka hingga
@@ -129,7 +132,7 @@
         </div>
         <div class="service-box">
           <ion-icon name="trending-up" class="service-icon"></ion-icon>
-          <h1 class="section-title">Inovasi Terus Menerus</h1>
+          <h1 class="service-title">Inovasi Terus Menerus</h1>
           <p class="service-description">
             Selalu berusaha untuk tetap menjadi yang terdepan dalam teknologi
             bowling. Kami terus memperbarui dan meningkatkan fasilitas kami
@@ -142,10 +145,14 @@
     <div class="background-color">
       <section class="event-section container2">
         <div class="event-heading">
-          <p class="section-tertiary">Lomba bowling Terakhir</p>
-          <h1 class="section-title">Riwayat Event GeroMichi Bowling Club</h1>
+          <p class="section-tertiary event-section-subtitle">
+            Event Bowling Terakhir
+          </p>
+          <h1 class="section-title event-section-title">
+            Riwayat Event GeroMichi Bowling Club
+          </h1>
         </div>
-        <div class="upcoming-event grid grid--cols-2">
+        <div class="previous-event grid grid--cols-2">
           <!-- EVENT 1 -->
           <div class="events-text grid--center-v">
             <h2 class="events-number">01</h2>
@@ -162,7 +169,7 @@
               Bowling Championship 2023.
             </p>
           </div>
-          <div class="events-image">
+          <div class="events-image first-col">
             <img src="img/lomba/lomba-1.png" alt="Laki Pemula" />
           </div>
 
@@ -198,7 +205,7 @@
               Bowling Academy) berhasil menyabet juara 1 Kategori Perempuan.
             </p>
           </div>
-          <div class="events-image">
+          <div class="events-image second-col">
             <img src="img/lomba/lomba-3.png" alt="Laki Pemula" />
           </div>
         </div>
@@ -230,11 +237,13 @@
               </li>
               <li>
                 <ion-icon name="cash" class="events-icon"></ion-icon>
-                <span>Biaya pendaftaran Rp.250.000.-</span>
+                <span>Biaya pendaftaran Rp.250.000,-</span>
               </li>
             </ul>
             <div class="events-button">
-              <a href="#" class="events-btn btn filled">Daftar lomba disini </a>
+              <a href="#" class="events-btn btn btn--filled"
+                >Daftar lomba disini
+              </a>
             </div>
           </div>
         </div>
@@ -255,11 +264,13 @@
               </li>
               <li>
                 <ion-icon name="cash" class="events-icon"></ion-icon>
-                <span>Biaya pendaftaran Rp.300.000.-</span>
+                <span>Biaya pendaftaran Rp.300.000,-</span>
               </li>
             </ul>
             <div class="events-button">
-              <a href="#" class="events-btn btn filled">Daftar lomba disini </a>
+              <a href="#" class="events-btn btn btn--filled"
+                >Daftar lomba disini
+              </a>
             </div>
           </div>
         </div>

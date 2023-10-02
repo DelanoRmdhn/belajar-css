@@ -52,10 +52,12 @@ body {
 }
 
 header {
-  height: 120vh;
+  height: 100vh;
   background-image: linear-gradient(rgb(34, 34, 34, 0.6), rgb(34, 34, 34, 0.6)),
     url(/07-Geromichi-Desktop/img/backup.png);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 
   position: relative;
   color: #fff;
@@ -124,16 +126,32 @@ header {
 .btn:link,
 .btn:visited {
   display: inline-block;
-
   font-size: 1.6rem;
+  font-weight: 500;
   text-decoration: none;
-  color: #fff;
   padding: 1.6rem 3.2rem;
-  border: 3px solid #f77f00;
   border-radius: 4rem;
+
+  transition: all 0.3s;
 }
 
-.filled {
+.btn--filled {
   background-color: #f77f00;
-  border: none;
+  color: #fff;
+}
+
+.btn--transparent {
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+.btn--filled:hover,
+.btn--filled:active {
+  background-color: #de7200;
+}
+
+.btn--transparent:hover,
+.btn--transparent:active {
+  color: #000;
+  background-color: #fff;
 }
