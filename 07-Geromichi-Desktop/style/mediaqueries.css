@@ -117,6 +117,68 @@
   .upcoming-event-heading {
     text-align: center;
   }
+
+  /* MOBILE NAVIGATION */
+  .btn-mobile-nav {
+    display: block;
+  }
+
+  .main-nav {
+    background-color: #d62828;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100vh;
+
+    /* ANIMASI */
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: all 0.5s;
+
+    /* MENYEMBUNYIKAN NAVIGASI */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  /* MENYEMBUNYIKAN DAN MENAMPILKAN ICON*/
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  /* MENAMPILKAN MAIN NAV SAAT NAV OPEN ADA */
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+
+    transform: translateX(0);
+  }
+
+  .main-nav-list {
+    flex-direction: column;
+    gap: 6.4rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  /* MENYEMBUNYIKAN HERO-SECTION SAAT NAV OPEN ADA */
+  .nav-open .hero-section {
+    display: none;
+  }
 }
 
 @media (max-width: 58em) {
@@ -162,8 +224,47 @@
     width: 60%;
   }
 
+  .events-text .events-title {
+    font-size: 2.8rem;
+  }
+
+  .events-description {
+    font-size: 1.8rem;
+  }
+
+  .upcoming-event {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 12.8rem;
+  }
+}
+
+@media (max-width: 31em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero-box {
+    width: 40rem;
+  }
+
+  .hero-title {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+  }
+
+  .hero-description {
+    font-size: 1.6rem;
+  }
+
+  .hero-btn .btn:link,
+  .hero-btn .btn:visited {
+    padding: 1rem 2rem;
+  }
+
   .events-image img {
-    width: 80%;
+    width: 100%;
   }
 }
 

@@ -50,6 +50,25 @@
   background-color: #de7200;
 }
 
+/* MOBILE NAVIGATION */
+.btn-mobile-nav {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  font-size: 4.4rem;
+  color: #fff;
+}
+
+/* menyembunyikan icon close */
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /**********************/
 /* HERO SECTION */
 /**********************/
